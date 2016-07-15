@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>the...</title>
+<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+	<!-- normalize.css and modernizr.js help with browser compatibility -->
+	<link rel="stylesheet" href="css/app2.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+  
+				<div id="ballWrapper">
+					<div id="ball"></div>
+					<div id="ballShadow"></div>			
+				</div>		
+
+<audio id="myAudio">
+ <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"
+         type='audio/mp4'>
+ <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga"
+         type='audio/ogg; codecs=vorbis'>
+ 
+</audio>
+<button type="button" onclick="aud_play_pause()">Play/Pause</button>
+
+ <div class="row">
+     <div class="large-5 offset-5 large-centered">
+<div id="circle">
+    </div>
+         </div>
+</div>
+ <div class="row">
+     <div class="large-5 offset-5 large-centered">
+    <canvas id="c"></canvas>
+         </div>
+         </div>
+    
+    <script>
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+        
+        
+</script>
+<!-- include before </body> tag -->
+    <script src="/js/app2.js"></script>
+    <script src="/js/app.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
